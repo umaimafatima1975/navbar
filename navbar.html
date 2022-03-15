@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .menu-bar {
+    overflow: hidden;
+     background: violet;
+}
+.menu-bar ul{
+    width: 100%;
+      /* background: #7BAE23; */
+      padding:8px;
+      z-index: 2;
+      margin: 0;
+}
+.menu-bar ul li{
+    display: inline;
+    padding: 11px;
+}
+.menu-bar  a {
+	/* float: left; */
+	font-size: 12px;
+	color: white;
+	text-align: center;
+    padding: 0;
+	/* padding: 14px 16px; */
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ .menu-bar .dropdown  {
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropdown-btn {
+	font-size: 12px;
+	border: none;
+	outline: none;
+	color: #fff;
+    display: inline;
+	/* padding: 14px 16px; */
+	background: inherit;
+	text-transform: uppercase;
+}
+.navbar a:hover, .dropdown:hover .dropdown-btn {
+	background: transparent;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: #f9f9f9;
+	width: 100%;
+    right: 0;
+	/* left: 20px; */
+	z-index: 10;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.column {
+	/* /* float: left; */
+	width: 83%;
+	/* padding: 10px; */
+	background: white;
+	height: 250px;
+    border-top: 4px solid black; 
+    left: 0;
+    list-style: none;
+    background-color:#fff; 
+    padding:20px 0;
+    margin: 0;
+    z-index: 99;
+}
+.column a {
+	/* display: block; */
+	/* float: none; */
+	font-size: 14px;
+     text-transform: uppercase;
+     color:#777777;
+     text-align: left;
+     text-decoration: none;
+     display: inline;
+     white-space: nowrap;
+     /* padding: 10px;  */
+}
+.column a:hover {
+	color: white;
+	background: white;
+}
+/* .row:after {
+	/* content: '';
+	display: table;
+	clear: both;
+} */
+
+    </style>
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+           <!-- <li> <a href="#">Beauty & Personal Care</a></li>
+            <a href="#">Household Needs</a>
+            <a href="#">Grocery & Staples</a>
+            <a href="#">Furnishing & Home Needs<a>
+            <a href="#">baby kids & toys</a>
+            <a href="#">pharmacy</a> -->
+            <li>
+                <a href="#">Beauty & Personal Care</a></li>
+              <li> <a href="#">Household Needs</a></li>
+              <li> <a href="#">Grocery & Staples</a></li>
+              <li> <a href="#">Furnishing & Home Needs<a></li>
+              <li> <a href="#">baby kids & toys</a></li>
+              <li> <a href="#">pharmacy</a></li>
+              <li class="dropdown-btn"> <a href="#">more</a>
+           
+		<ul class="dropdown">
+			<!-- <a href="#" class="dropdown-btn">more</a> -->
+			<div class="dropdown-content">
+				<div class="row">
+					<div class="column">
+						
+						<a href="#">Biscuits Snacks & Chocolates</a>
+						<a href="#">Home & Kitchen</a>
+						<a href="#">Noodles Sauces & Frozen Foods</a>
+						<a href="#">Breakfast & Dairy</a>
+						<a href="#">Beverages</a>
+						<a href="#">>pet care</a>
+                        <a href="#"> Home services</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Meat & Seafood</a>
+                        <a href="#">offers</a>
+                        <a href="#">Corona Essentials</a>
+					</div>
+            </div>
+            </div>
+        </li>
+            </ul>>
+            </ul>
+    </nav>
+</body>
+</html>
